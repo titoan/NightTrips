@@ -1,7 +1,83 @@
 @import "fonts";
-.container{
-    width: 800px;
-    height: 600px;
-    background-color: rgb(185, 32, 32);
+@import "function";
+
+body {
+    font-family: "Larsseit", sans-serif;
+    margin: 0;
+}
+
+// Цикл создает колонки определенной ширины. Ширина вычитается при помощи функции
+@for $i from 1 through 12 {
+    .col-#{$i} {
+        width: col-width($i);
+    }
+}
+
+a{
+    text-decoration: none;    
+}
+
+h1{
+    margin: 0;
+    color: #fff;
+    line-height: 153px;
+}
+
+p{
+    color: #fff;
+    font-size: 17px;
+    font-weight: 300;
+    line-height: 150%;
+    margin: 0;
+}
+
+h1.title{
+    font-size: 120px;
+}
+
+.content-container {
+    width: 100%;
+    max-width: 1430px;
     margin: 0 auto;
 }
+
+.row {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;   
+}
+
+.btn {
+    background: #00c9e0;
+    box-shadow: 5px 15px 40px rgba(0, 201, 224, 0.2);
+    border-radius: 48px;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 21px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    display: inline-block;
+    text-align: center;
+    letter-spacing: 0.1rem;
+    padding: 20.5px 0;
+    cursor: pointer;
+
+}
+
+.btn-menu{
+    width: 167px;
+    position: relative;
+
+    &::after{
+        position: absolute;
+        content: ' ';
+        width: 30px;
+        height: 2px;
+        background-color: #fff;
+        right: -15px;
+        top: 50%;
+    }
+}
+
+
+@import "main-section"

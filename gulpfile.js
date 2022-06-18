@@ -30,22 +30,27 @@ gulp.task('img', async function(){
     .pipe(gulp.dest('dist/img'))
 })
 
-function pug(){
-    return gulp.src(['src/pug/**/*.pug', '!src/pug/**/_*.pug'])
-    .pipe(pug())
-    .pipe(gulp.dest('dist/'))
-    .pipe(browserSync.reload({
-            stream: true,          
-          }))  
-}
+// function pug(){
+//     return gulp.src(['src/pug/**/*.pug', '!src/pug/**/_*.pug'])
+//     .pipe(pug())
+//     .pipe(gulp.dest('dist/'))
+//     .pipe(browserSync.reload({
+//             stream: true,          
+//           }))  
+// }
 
-function sass(){
-    return gulp.src('src/sass/**/*.scss')
-        .pipe(sass())
-        .pipe(cleanCSS({level:2}))
-        .pipe(gulp.dest('dist/css'))
-        .pipe(browserSync.stream())        
-}
+// function sass(){
+//     return gulp.src('src/sass/**/*.scss')
+//         .pipe(sass())
+//         .pipe(cleanCSS({level:2}))
+//         .pipe(gulp.dest('dist/css'))
+//         .pipe(browserSync.stream())        
+// }
+
+// function img(){
+//     return gulp.src('src/img/*')
+//     .pipe(gulp.dest('dist/img'))
+// }
 
 function watch(){
     // browserSync.init({
