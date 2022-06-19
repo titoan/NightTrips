@@ -16,6 +16,8 @@
     &__menu{
         ul{
             display: flex;
+            padding: 0;
+            margin: 0 0 150px 0;
             li{
                 flex: 1;
                 text-align: center;
@@ -26,6 +28,47 @@
                 font-size: 18px;
                 font-weight: 400;
             }
+        }
+    }
+}
+
+.tabs__content{
+    margin-bottom: 100px;
+}
+
+.tab-slider{
+   
+    &__item{
+        position: relative;
+    }
+
+    &__nav{
+        position: absolute;
+        bottom: 4px;
+        right: 0;
+        display: flex;
+        gap: 2px;
+        background-color: #133149;
+        border-radius: 10px 0 10px 0;
+        *{
+            width: 65px;
+            height: 65px;
+            background:#011627;
+            box-shadow: -10px 14px 24px rgba(1, 22, 39, 0.08);
+            background-repeat: no-repeat;
+            background-position: center center;
+            cursor: pointer;
+            
+        }
+
+        .prew-arrow{
+            background-image: url(../img/slider-arrow-prew.svg);
+            border-radius: 10px 0 0 0;
+        }
+
+        .next-arrow{
+            background-image: url(../img/slider-arrow-next.svg);
+            border-radius: 0 0 10px 0;
         }
     }
 }
