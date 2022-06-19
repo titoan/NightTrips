@@ -33,7 +33,7 @@ h2{
     color: #fff;
     font-weight: 700;
     font-size: 72px;
-    line-height: 110%;
+    line-height: 81%;
     letter-spacing: -0.04em;
     margin: 0;
 }
@@ -103,6 +103,19 @@ p{
 .def_btn{
     width: 282px;
 }
+
+.soc-ico{    
+    line-height: 11px;
+}
+
+.soc-icons{
+    display: flex;    
+    align-items: center;  
+    gap: 23px;
+    position: relative;
+    z-index: 99;
+}
+
 
 
 @import "main-section";

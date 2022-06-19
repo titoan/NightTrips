@@ -6,6 +6,12 @@
     position: relative;
     margin-bottom: 75px;
 
+    .soc-icons{
+        flex-direction: column;
+        justify-content: flex-end;
+        height: 100%;
+    }
+
     &__menu {
         .row {
             justify-content: space-between;
@@ -86,17 +92,3 @@
     background: linear-gradient(180deg, #09f4f4 0%, #00c9e0 100%);
     border-radius: 13px;
 }
-
-.soc-icons{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-end;
-    height: 100%;
-    gap: 23px;
-}
-
-.soc-ico{    
-    line-height: 11px;
-}
-
