@@ -1,9 +1,10 @@
 .main-section {
     background-image: url(../img/main-section_bg.png);
     background-repeat: no-repeat;
-    background-size: cover;
-    height: 100vh;
-    padding-top: 75px;
+    background-size: cover;    
+    padding-top: 3.945%;
+    position: relative;
+    margin-bottom: 120px;
 
     &__menu {
         .row {
@@ -16,8 +17,8 @@
         max-width: 643px;
         margin: 0 auto;
         text-align: center;
-        padding-top: 155px;
-        margin-bottom: 200px;
+        padding-top: 10.84%;
+        margin-bottom: 14%;
 
         .subtitle {
             font-weight: 400;
@@ -25,7 +26,26 @@
         }
 
         .title {
-            margin-bottom: 14px;
+            margin-bottom: 32px;
+            line-height: 115%;
+        }
+    }
+
+    &__item{
+        padding-bottom: 10%;
+        .row{
+            justify-content: space-between;
+        }
+    }
+
+    &__gradient{
+        position: absolute;
+        right: 0;
+        left: 0;
+        bottom: -90px;
+
+        img{
+            width: 100%;
         }
     }
 
@@ -66,3 +86,17 @@
     background: linear-gradient(180deg, #09f4f4 0%, #00c9e0 100%);
     border-radius: 13px;
 }
+
+.soc-icons{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    height: 100%;
+    gap: 23px;
+}
+
+.soc-ico{    
+    line-height: 11px;
+}
+

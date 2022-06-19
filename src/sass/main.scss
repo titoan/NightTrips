@@ -4,6 +4,7 @@
 body {
     font-family: "Larsseit", sans-serif;
     margin: 0;
+    background-color: #011627;
 }
 
 // Цикл создает колонки определенной ширины. Ширина вычитается при помощи функции
@@ -21,6 +22,15 @@ h1{
     margin: 0;
     color: #fff;
     line-height: 153px;
+    font-size: 120px;
+}
+
+h2{
+    color: #fff;
+    font-weight: 700;
+    font-size: 72px;
+    line-height: 110%;
+    letter-spacing: -0.02em;
 }
 
 p{
@@ -80,4 +90,5 @@ h1.title{
 }
 
 
-@import "main-section"
+@import "main-section";
+@import "trip-section";
