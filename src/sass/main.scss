@@ -33,7 +33,7 @@ h2{
     color: #fff;
     font-weight: 700;
     font-size: 72px;
-    line-height: 81%;
+    line-height: 115%;
     letter-spacing: -0.04em;
     margin: 0;
 }
@@ -102,6 +102,7 @@ p{
 
 .def_btn{
     width: 282px;
+    text-transform: uppercase;
 }
 
 .soc-ico{    
@@ -116,7 +117,16 @@ p{
     z-index: 99;
 }
 
+.fw_bold{
+    font-weight: 400;
+}
+
+.fw_thin{
+    font-weight: 200;
+}
+
 
 
 @import "main-section";
 @import "trip-section";
+@import "about-us";

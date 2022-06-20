@@ -1,0 +1,17 @@
+.about-us{
+    &__description{
+        width: 321px;
+    }
+
+    &__title{
+        margin-bottom: 40px;
+    }
+
+    &__text{
+        height: 270px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-bottom: 40px;
+    }
+}
