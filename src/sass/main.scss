@@ -7,12 +7,7 @@ body {
     background-color: #011627;
 }
 
-// Цикл создает колонки определенной ширины. Ширина вычитается при помощи функции
-@for $i from 1 through 12 {
-    .col-#{$i} {
-        width: col-width($i);
-    }
-}
+
 
 a{
     text-decoration: none;    
