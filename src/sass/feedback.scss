@@ -1,5 +1,23 @@
+.feedback{
+    &__title{        
+        text-align: center;
+        margin-bottom: 70px;
+        h2{
+            margin-bottom: 30px;
+        }
+    }
+    
+    &__subtitle{
+        font-size: 24px;
+        letter-spacing: 0.15em;
+        font-weight: 400;
+    }
+}
+
 .feedback__bg-container{
     max-width: 1680px;
     background-color: #011627;
     border-radius: 8px;
+    margin: 0 auto;
+    padding-top: 100px;
 }
