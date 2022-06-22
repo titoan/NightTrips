@@ -1,4 +1,5 @@
 .feedback {
+    margin-bottom: 150px;
     &__title {
         text-align: center;
         margin-bottom: 70px;
@@ -20,6 +21,28 @@
     border-radius: 8px;
     margin: 0 auto;
     padding-top: 100px;
+    position: relative;
+
+    &::after,&::before{
+        content: ' ';
+        position: absolute;
+        width: 2px;
+        height: 80px;
+        background: linear-gradient(180deg, #09F4F4 0%, #00C9E0 100%);
+        border-radius: 13px;
+        right: 50%;
+        
+    }
+
+    &::after{
+        bottom:0;
+        transform: translate(-50%, 40px);
+    }
+
+    &::before{
+        top:0;
+        transform: translate(-50%, -40px);
+    }
 }
 
 .feedback-card {
@@ -61,4 +84,29 @@
             font-size: 12px; 
         }
     }
+}
+
+.feedback-cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;    
+}
+
+.feedback__footer{
+    display: flex;
+   align-items: center;
+    flex-direction: column;
+    margin-top: 150px;
+    padding-bottom: 145px;
+}
+
+.feedback__footer-subtitle{
+    font-size: 24px;
+    line-height: 150%;   
+    letter-spacing: 0.07em;
+    font-weight: 400;
+    max-width: 388px;
+    text-align: center;
+    margin-top: 30px;    
 }

@@ -1,22 +1,22 @@
 section.feedback
-    .feedback__bg-container
-        .content-container
-            .container
-                .feedback__title 
-                    h2 People’s thoughts
-                    p.feedback__subtitle SEE WHAT ARE OTHERS SAYING
-                .feedback-cards                    
-                    .row
-                        -for(let i = 0; i < 4; i++)
-                            .col 
-                                .feedback-card
-                                    .feedback-card__content
-                                        .feedback-card__text
-                                            p.fw_bold Elementum mi felis, sit velit lobortis ultricies non. Mattis enim, nisl
-                                            p  adipiscing natoque diam et. Cum posuere in velit massa sagittis augue egestas. Eu sollicitudin et quam eu. Nunc, sed imperdiet blandit morbi. Maecenas lobortis tristique rutrum.
-                                        .feedback-card__user 
-                                            .feedback-card__img 
-                                                img(src="img/feedback-img.png" alt="")
-                                            .feedback-card__username
-                                                p Judy ROSELESS
-                                                p MARKETING HEAD at ROM.
+    .feedback__bg-container       
+        .container
+            .feedback__title 
+                h2 People’s thoughts
+                p.feedback__subtitle SEE WHAT ARE OTHERS SAYING
+            .feedback-cards
+                -for(let i = 0; i < 4; i++)
+                    .feedback-card
+                        .feedback-card__content
+                            .feedback-card__text
+                                p.fw_bold Elementum mi felis, sit velit lobortis ultricies non. Mattis enim, nisl
+                                p  adipiscing natoque diam et. Cum posuere in velit massa sagittis augue egestas. Eu sollicitudin et quam eu. Nunc, sed imperdiet blandit morbi. Maecenas lobortis tristique rutrum.
+                            .feedback-card__user 
+                                .feedback-card__img 
+                                    img(src="img/feedback-img.png" alt="")
+                                .feedback-card__username
+                                    p Judy ROSELESS
+                                    p MARKETING HEAD at ROM.
+            .feedback__footer 
+                h2 See you soon!
+                p.feedback__footer-subtitle We hope to meet each other very soon.
