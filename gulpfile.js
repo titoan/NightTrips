@@ -2,7 +2,7 @@ const gulp = require('gulp');
     sass = require('gulp-sass')(require('sass')),    
     pug = require('gulp-pug'),    
     cleanCSS = require('gulp-clean-css'),
-    browserSync = require('browser-sync').create();  
+    browserSync = require('browser-sync').create(),    
 
 gulp.task('sass', async function(){
     return gulp.src('src/sass/**/*.scss')
@@ -16,7 +16,7 @@ gulp.task('sass', async function(){
 
 gulp.task('pug', async function(){
     return gulp.src(['src/pug/**/*.pug', '!src/pug/**/_*.pug'])
-    .pipe(pug())
+    .pipe(pug())    
     .pipe(gulp.dest('dist/'))
 })
 

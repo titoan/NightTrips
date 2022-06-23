@@ -1,21 +1,20 @@
-- let tabsTitles = ['Chill Adventure','Spooky Times','Desert Madness','Out in the wild'];
-
+- let tabsInfo = [{title:'Chill Adventure'},{title:'Spooky Times'},{title:'Desert Madness'},{title:'Out in the wild'}];
 
 section.trip-section
     .content-container
         .container
             h2.trip-section__title Pick your trip                 
-                .title_divider 
+                .title_divider
                     img(src="img/title-divider.svg" alt="")
                 p.trip-section__title-text Our team put together some trips to you to discover, feel free to discover each of them.
             .tabs
                 .tabs__menu
                     ul
                         li.active Chill Adventure
-                        li Spooky Times
+                        li Spooky Times 
                         li Desert Madness
                         li Out in the wild
-                each title, index in tabsTitles               
+                each item, index in tabsInfo        
                     if index == 0
                         .tabs__content.active
                             include _tabs-content
