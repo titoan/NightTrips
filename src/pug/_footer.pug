@@ -1,0 +1,33 @@
+- let arrTitles = ['About','FAQ','Events','Contact us'];
+- let aboutList = ['Our Mission','Terms','Copyrights'];
+- let fqaList = ['Rules','Tickets','Editions','Contribute'];
+- let eventsList = ['Star Gazing','Desert Mania','Dunes Madness','Spooky Land'];
+- let contactUsList = ['hello@example.com','(405) 555-0128','(252) 555-0126'];
+
+- let allArr = [aboutList, fqaList, eventsList, contactUsList]
+
+section.footer
+    .container 
+        .row 
+            each title, index in arrTitles
+                .col.col-2.d_flex.jc_center
+                    .footer-nav
+                        h3.footer__title= title
+                        ul
+                            each val in allArr[index]
+                                li
+                                    a(href="")=val
+            .col.col-4.d_flex.jc_end
+                .footer-nav.footer-soc
+                    h3.footer__title Follow us
+                    .soc-icons
+                        a.soc-ico(href="instagram.com")
+                            img(src="img/ico-instagram.svg" alt="")
+                        a.soc-ico(href="facebook.com")
+                            img(src="img/ico-facebook.svg" alt="")
+                        a.soc-ico(href="twitter.com")
+                            img(src="img/ico-twitter.svg" alt="")
+        .footer__copy-r 
+            p Copyright © Night Trips 2019. All rights reserved.
+            .footer__logo
+                img(src="img/logo.svg" alt="")

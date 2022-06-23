@@ -32,15 +32,35 @@
                 padding: 35px 0;
                 font-size: 18px;
                 font-weight: 400;
+                position: relative;
+                &.active{
+                    color: #41EAD4;                    
+                    &::after{
+                        position: absolute;
+                        content: '';
+                        left: 0;
+                        right: 0;
+                        height: 4px;
+                        background-color: #41ead4;
+                        border-radius: 13px;
+                        bottom: -2px;
+                    }
+
+                }
             }
         }
     }
 }
 
 .tabs__content {
+    display: none;
     margin-bottom: 100px;
     .col {
         width: 50%;
+    }
+
+    &.active{
+        display: block;
     }
 }
 
