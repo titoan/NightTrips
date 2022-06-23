@@ -1,4 +1,5 @@
--let tabsTitles = ['Chill Adventure','Spooky Times','Desert Madness','Out in the wild'];
+- let tabsTitles = ['Chill Adventure','Spooky Times','Desert Madness','Out in the wild'];
+
 
 section.trip-section
     .content-container
@@ -14,7 +15,7 @@ section.trip-section
                         li Spooky Times
                         li Desert Madness
                         li Out in the wild
-                each title, index in tabsTitles
+                each title, index in tabsTitles               
                     if index == 0
                         .tabs__content.active
                             include _tabs-content
