@@ -1,0 +1,108 @@
+.tab-slider {
+    width: 486px;
+    position: relative;
+
+    &__item {
+        position: relative;
+        z-index: 5;
+        overflow-x: hidden;
+        height: 607px;
+    }
+
+    &__container {
+        display: flex;
+        width: 486px;
+        position: absolute;
+    }
+
+    &__img {
+        border-radius: 18px;
+        width: 486px;
+        height: 607px;
+        border-radius: 10px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        flex: 0 0 100%;
+
+        &:nth-child(1) {
+            background-image: url(../img/tabs-img/desert/slider-img_1.png);
+        }
+
+        &:nth-child(2) {
+            background-image: url(../img/tabs-img/desert/desert_2.webp);
+        }
+
+        &:nth-child(3) {
+            background-image: url(../img/tabs-img/desert/desert_3.webp);
+        }
+
+        &:nth-child(4) {
+            background-image: url(../img/tabs-img/desert/desert_4.webp);
+        }
+    }
+
+    &__nav {
+        position: absolute;
+        bottom: 0px;
+        right: 0;
+        display: flex;
+        gap: 2px;
+        background-color: #133149;
+        border-radius: 10px 0 10px 0;
+        z-index: 999;
+        * {
+            width: 65px;
+            height: 65px;
+            background: #011627;
+            box-shadow: -10px 14px 24px rgba(1, 22, 39, 0.08);
+            background-repeat: no-repeat;
+            background-position: center center;
+            cursor: pointer;
+        }
+
+        .prew-arrow {
+            background-image: url(../img/slider-arrow-prew.svg);
+            border-radius: 10px 0 0 0;
+        }
+
+        .next-arrow {
+            background-image: url(../img/slider-arrow-next.svg);
+            border-radius: 0 0 10px 0;
+        }
+    }
+
+    &__info {
+        position: absolute;
+        top: 233px;
+        left: -19%;
+        z-index: 50;
+
+        .tab-slider__name {
+            width: 205px;
+            font-weight: 400;
+            font-size: 24px;
+            line-height: 150%;
+            letter-spacing: 0.15em;
+        }
+
+        .tab-slider__num {
+            color: #41ead4;
+            font-weight: 800;
+            letter-spacing: 0.15em;
+            line-height: 150%;
+        }
+    }
+
+    &__decor {
+        width: 230px;
+        height: 230px;
+        background-image: url(../img/tab-slider-decor.svg);
+        background-repeat: no-repeat;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        z-index: 1;
+        bottom: -50px;
+        left: -56px;
+    }
+}
