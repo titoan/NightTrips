@@ -92,3 +92,59 @@
     background: linear-gradient(180deg, #09f4f4 0%, #00c9e0 100%);
     border-radius: 13px;
 }
+
+.nav-mob__gamburger{
+    display: none;
+}
+
+@media (max-width:1440px){
+    .main-section{
+        padding-left: 20px;
+        padding-right: 20px;       
+    }        
+}
+
+@media (max-width:650px){
+    .main-section .title{
+        font-size: 18vw;
+    }
+}
+
+@media (max-width:455px){
+    .main-section .title{
+        font-size: 17vw;
+    }
+}
+
+@media (max-width:480px){
+    .main-section .nav{
+        display: none;
+    }
+
+    .nav-mob__gamburger{
+        position: relative;
+        display: block;
+        height: 2px;
+        background-color: #fff;
+        width: 40px;
+
+        &::after{
+            content: ' ';
+            position: absolute;
+            width: 40px;
+            height: 2px;
+            top: 10px;
+            background-color: #fff;
+        }
+
+        &::before{
+            content: ' ';
+            position: absolute;
+            width: 40px;
+            height: 2px;
+            bottom: 10px;
+            background-color: #fff;
+        }
+    }
+}
+

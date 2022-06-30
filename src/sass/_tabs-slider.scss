@@ -13,6 +13,7 @@
         display: flex;
         width: 486px;
         position: absolute;
+        transition: 1s;
     }
 
     &__img {
@@ -23,22 +24,7 @@
         background-size: cover;
         background-repeat: no-repeat;
         flex: 0 0 100%;
-
-        &:nth-child(1) {
-            background-image: url(../img/tabs-img/desert/slider-img_1.png);
-        }
-
-        &:nth-child(2) {
-            background-image: url(../img/tabs-img/desert/desert_2.webp);
-        }
-
-        &:nth-child(3) {
-            background-image: url(../img/tabs-img/desert/desert_3.webp);
-        }
-
-        &:nth-child(4) {
-            background-image: url(../img/tabs-img/desert/desert_4.webp);
-        }
+        overflow: hidden;
     }
 
     &__nav {

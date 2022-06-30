@@ -1,18 +1,3 @@
-//- - let sliderImgs = [
-//-     {
-//-         01:'img/slider-img_1.png'
-//-     },
-//-     {
-//-         01: '/img/tabs-img/dark-moody-scary-spooky-preview.jpg'
-//-     },
-//-     {
-//-         01: '/img/tabs-img/CoachellaValleyPreserve.jpg'
-//-     },
-//-     {
-//-         01:'/img/tabs-img/out-in-the-wild.jpg'
-//-     }
-//- ];
-
 .row 
     .col 
         .tab-slider
@@ -21,9 +6,9 @@
                 .tab-slider__num 01
                 p.tab-slider__name GRAND DUNES LANDSCAPE
             .tab-slider__item
-                .tab-slider__container
-                    - for(let i = 0; i < 4; i++)                       
-                        .tab-slider__img                    
+                .tab-slider__container                                           
+                    .tab-slider__img
+                        img(src=item.img, alt="")
                 .tab-slider__nav
                     .prew-arrow
                     .next-arrow
