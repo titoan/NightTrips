@@ -92,3 +92,17 @@
         left: -56px;
     }
 }
+
+@media (max-width: 768px){
+    .tab-slider__info{
+        top: 11px;
+        left: 3%;
+        // position: absolute;
+    }
+}
+
+@media (max-width: 619px){
+    .tab-slider__decor{
+        display: none;
+    }
+}
