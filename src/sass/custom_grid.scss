@@ -37,9 +37,9 @@ $adaptive-breakpoints: (
 );
 
 @each $size in map-keys($adaptive-breakpoints){
-    @media (min-width: map_get($adaptive-breakpoints, $size)){
+    @media (max-width: map_get($adaptive-breakpoints, $size)){
         @for $i from 1 through $columns{
-            .column-#{$size}-#{$i}{
+            .col-#{$size}-#{$i}{
                 flex: 0 0 col-width($i);
                 max-width: col-width($i);                
             }
