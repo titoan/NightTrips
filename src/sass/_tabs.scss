@@ -103,10 +103,29 @@
 @media (max-width: 860px){
     .tabs__menu ul li{
         flex: 1 0 100%;
-    }
-
-    .tabs__content-social{
-        display: none;
-    }
+    }  
 }
 
+@media (max-width: 1023px){
+    .tabs__content{        
+        .col{
+            width: 100%;
+        }
+    }
+
+    .tab-slider{
+        margin: 0 auto;
+    }
+
+    .tabs__content-description{
+        margin: 0 auto;
+    }    
+}
+
+@media (max-width: 1235px){
+    .tabs__content-social{
+        position: relative;
+        bottom: 0;
+        right: 0;
+    }
+}

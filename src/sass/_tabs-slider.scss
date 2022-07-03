@@ -93,12 +93,27 @@
     }
 }
 
-@media (max-width: 768px){
+// @media (max-width: 768px){
+//     .tab-slider__info{
+//         top: 11px;
+//         left: 3%;       
+//     }
+// }
+
+@media (max-width: 1340px){
     .tab-slider__info{
         top: 11px;
-        left: 3%;
-        // position: absolute;
+        left: 3%;       
     }
+
+    .tab-slider__decor{
+        display: none;
+    }
+
+    .tabs__content-social{
+
+    }
+
 }
 
 @media (max-width: 619px){

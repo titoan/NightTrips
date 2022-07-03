@@ -49,5 +49,4 @@ function getSlider() {
     });
   });
 }
-
 getSlider();
