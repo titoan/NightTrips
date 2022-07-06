@@ -29,6 +29,9 @@
 }
 
 .footer-nav.footer-soc{
+    width: 100%;
+    display: flex;    
+    justify-content: flex-end;
     margin-right: 95px;
 }
 
@@ -40,4 +43,13 @@
 
 .footer__logo{
     margin-top: 50px;
+    width: 57px;
+    display: inline-block;
+}
+
+@media (max-width:768px) {
+    .footer-nav.footer-soc{
+        margin: 0;
+        justify-content: center;
+    }
 }

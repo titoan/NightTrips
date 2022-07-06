@@ -54,7 +54,7 @@
     box-sizing: border-box;
 
     &__content {
-        width: 334px;
+        max-width: 334px;
         margin: 0 auto;
     }
 
@@ -109,4 +109,46 @@
     max-width: 388px;
     text-align: center;
     margin-top: 30px;    
+}
+
+@media (max-width:480px) {
+    .feedback-card__content{
+        padding: 0 10px;
+    }
+}
+
+@media screen and (max-width: 570px) {
+    .feedback-card{
+        width: 100%;
+    }
+
+    .feedback__title{
+        margin-bottom: 40px;
+    }
+
+    .feedback__footer{
+        margin-top: 70px;
+    }
+
+    .feedback__footer h2{
+        font-size: 12.63vw;
+    }
+
+    .feedback__footer-subtitle{
+        font-size: 4.22vw;
+    }
+
+    .feedback__title h2{
+        font-size: 12.63vw;
+        margin-bottom: 20px;
+    }
+
+    .feedback__subtitle{
+        font-size: 4.22vw;
+        margin-top: 15px;
+    }
+
+    .feedback__bg-container::after{
+        transform: translate(-50%,-20px);
+    }
 }
